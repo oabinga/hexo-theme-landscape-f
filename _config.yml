@@ -1,35 +1,36 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
+  关于: /about    
 rss: /atom.xml
-github: https://github.com/howiefh
+github: https://github.com/oabinga
 
 # Content
-excerpt_link: Read More
+excerpt_link: 阅读更多
 fancybox: true
 
 # Sidebar
 sidebar: right
 widgets:
-- about_me
+#- about_me
 - category
 - tag
 - tagcloud
-- archive
+#- archive
 - calendar
 - recent_posts
-- duoshuo_recent_comments
-- links
+#- duoshuo_recent_comments
+#- links
 
 # Miscellaneous
 google_analytics:
-baidu_tongji:
+baidu_tongji: 518b61392b8176e803c0bc2f03d713dd
 favicon: /favicon.ico
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
+#twitter:
+#google_plus:
+#fb_admins:
+#fb_app_id:
 
 # Toc
 toc:
@@ -42,7 +43,7 @@ go_top: true
 duoshuo_shortname:
 
 # baidu share
-baidushare: true
+baidushare: false
 
 # blogroll
 links:
@@ -53,9 +54,9 @@ links:
 about_me:
   title: ABOUT ME
   gravatar: a@abc.com
-  avatar: /images/github.jpg
+  # avatar: /images/github.jpg
   texts:
-  - Hi,I'm howiefh.
+  - 
 
 # display updated
 display_updated: true

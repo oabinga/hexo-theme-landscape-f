@@ -19,16 +19,23 @@
           </p>
         <% } %>
       <% } else { %>
-		<% if( (post.toc !== false) && theme.toc.article){ %>
+		 <% if( (post.toc !== false) && theme.toc.article){ %>
 		<div id="toc" class="toc-article">
-			<h2 class="toc-title"><span><%= __('contents') %></span></h2>
+			<!--<h2 class="toc-title"><span><%= __('contents') %></span></h2>-->
+                  	<h3 class="toc-title"><span><%= __('contents') %></span></h3>
 		<% if(post.list_number == false) {%>
 		<%- toc(post.content,{list_number:false}) %>
 		<% }else{ %>
 			<%- toc(post.content) %>
 		<% } %>
 		</div>
-		<% } %>
+		<% } %> 
+                <!--<% if (!index && post.toc){ %>
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                <%- toc(post.content) %>
+                </div>
+                <% } %>-->
         <%- post.content %>
       <% } %>
     </div>
